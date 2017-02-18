@@ -159,8 +159,49 @@ Here is an example output of the `slide_window` function
 Here are some functions used to draw the bounding boxes, finding the cars, etc.
 * `draw_boxes(img, bboxes, color=(0, 0, 255), thick=6)` - to draw boxes around the cars
 * `find_cars(img, window_list, window_size, clf, train_height=64, train_width=64)` - To extract HOG features and predict if there is a car in the window.
-* `find_cars_multiSize` - To use different sizes of windows
+* `find_cars_multiSize` - To find cars in different sizes of windows
 
 
 Here are some images from the pipeline:
 ![alt text][image_12]  
+
+---
+
+### Video Implementation
+
+####Criteria 6. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
+[Result of Test Video](./test_video_out.mp4)
+
+[Result of Project Video](./project_video_out.mp4)
+
+####Criteria 7. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
+
+Postions of positive detections in each video frame has been recorded and a heatmap is created. Various thresholds have been tried to filter out and map the vehicle positions using `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap. Bounding boxes are then created around each of the blob. Lots of false positives have been observed using this technique. One of the experiments that has been tried out to reduce the false positives is to exponentially decay the heatmap of prior filters. The functions to perform these (`add_heat`, `apply_threshold`, `bbox_from_labels`, `bboxes_from_detections`) are in the iPython notebook.
+
+```
+global heatmap_cont
+heatmap = np.zeros((img.shape[0],img.shape[1]))
+heatmap = add_heat(heatmap, detections)
+
+heatmap_cont = heatmap_cont if not heatmap_cont is None else (heatmap*2)
+heatmap += heatmap_cont
+heatmap_cont = heatmap * 3/4
+
+heatmap = apply_threshold(heatmap, threshold)
+labels = label(heatmap)
+```
+
+---
+
+###Discussion
+
+####1. Briefly, discuss any problems/issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+
+I think this was very exciting, challenging, and interesting project. Some of the places for improvements in the model are:
+* Very slow processing. The pipeline should be optimized for speed, as the the 50s. video takes more than 3 hours to process.
+* Hyper and meta parameter optimization - the classifier, the threshold for boxes, the windows sizes, and all the other meta and hyperparameters in the pipeline.
+* A different classifier for the different sizes of patches instead of resizing the patch could improve the classification process.
+* More features. I used only HOG features from 8 different color transforms. Many other options could be investigated.
+* Kalman filter and working with previous frames and predicting future position would be another interesting advancement of the project.
+* Better visualization of the found objects may improve the feeling of the algorithm.
+* Finally, but not least I would like to investigate some deep learning algorithm pipelines.
