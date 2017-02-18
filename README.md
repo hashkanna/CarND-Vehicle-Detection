@@ -114,4 +114,33 @@ cells_per_block | (2, 2)
 ![alt text][image_9]
 
 #####Non-Vehicle HSV HOG Transform
-![alt text][image_10]
+![alt text][image_10]  
+
+####Criteria 2. Explain how you settled on your final choice of HOG parameters
+
+Various combinations of HOG parameters have been tried out manually and selected the ones which gave a good discrimination visually.
+Parameter Grid Search could be done to automate this process and identify the best parameters.
+
+####Criteria 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them)
+
+Support Vector Classifier(LinearSVC) has been used to classify the vehicles and non-vehicles based on the training png images from KITTI [vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and [non-vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) images
+
+* Training and Test Set has been created using the train_test_split function from sklearn. A ratio of 85:15 train/test split has been selected as shown in the code below
+```
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.15, random_state=42)
+```
+
+* The classifier pipeline has been chosen as below
+
+```
+clf = Pipeline([('feature_selection', SelectKBest(chi2, k=5000)),
+                ('scaling', StandardScaler()),
+                ('classification', LinearSVC(loss='hinge')),
+               ])
+```
+
+* Model Evaluation has been performed using the score function from sklearn.
+A score of 97.86% correct classification has been observed.
+```
+clf.score(X_test, y_test)
+```
