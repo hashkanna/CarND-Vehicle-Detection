@@ -71,7 +71,9 @@ Here are some samples
 **Sample Test Images**
 ![alt text][image_2]
 
-**Color Spaces**
+**Color Spaces**  
 Different color spaces like RGB, HSV have been explored.  
+
 The hog package from scikit-Learn, skimage.hog(), has been used to extract the hog features
+
 Different values for the various HOG parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`) have been explored.
