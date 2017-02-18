@@ -62,16 +62,16 @@ Two helper functions `load_images` and `plot_images` have been created to perfor
 All `vehicle` and `non-vehicle` images are loaded using these functions.   
 Here are some samples  
 
-Sample Vehicle Images
+**Sample Vehicle Images**
 ![alt text][image_0]
 
-Sample Non-Vehicle Images
+**Sample Non-Vehicle Images**
 ![alt text][image_1]
 
-Sample Test Images
+**Sample Test Images**
 ![alt text][image_2]
 
-Color Spaces:  
+**Color Spaces**
 Different color spaces like RGB, HSV have been explored.  
 The hog package from scikit-Learn, skimage.hog(), has been used to extract the hog features
 Different values for the various HOG parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`) have been explored.
