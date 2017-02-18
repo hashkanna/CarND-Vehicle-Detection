@@ -199,7 +199,7 @@ labels = label(heatmap)
 
 ###Discussion
 
-####1. Briefly, discuss any problems/issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+####Criteria 8. Briefly, discuss any problems/issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 Here are some improvements that can be done to improve the project
 * Use Deep Learning ConvNets to generate features automatically
