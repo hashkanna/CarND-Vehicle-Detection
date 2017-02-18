@@ -14,9 +14,13 @@ Vehicle Detection Project
 [image_1]: ./output_images/non_vehicles.png "Non Vehicle Images"
 [image_2]: ./output_images/test_images.png "Test Images"
 [image_3]: ./output_images/RGB_ColorTransform.png "Vehicle - RGB Color Transform"
-[image_4]: ./output_images/HSV_ColorTransform.png "NonVehicle - HSV Color Transform"
+[image_4]: ./output_images/HSV_ColorTransform.png "Vehicle - HSV Color Transform"
 [image_5]: ./output_images/RGB_HOG.png "Vehicle - RGB HOG Transform"
-[image_6]: ./output_images/HSV_HOG.png "Non Vehicle - HSV HOG Transform"
+[image_6]: ./output_images/HSV_HOG.png "Vehicle - HSV HOG Transform"
+[image_7]: ./output_images/NonVehicle_RGB_ColorTransform.png "Non Vehicle - RGB Color Transform"
+[image_8]: ./output_images/NonVehicle_HSV_ColorTransform.png "Non Vehicle - HSV Color Transform"
+[image_9]: ./output_images/NonVehicle_RGB_HOG.png "Non Vehicle - RGB HOG Transform"
+[image_10]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
 
 
 
@@ -89,7 +93,19 @@ Here is an example using the RGB and HSV color spaces and HOG parameters of orie
 ![alt text][image_4]
 
 #####Vehicle RGB HOG Transform
-![alt text][image_3]
+![alt text][image_5]
 
 #####Vehicle HSV HOG Transform
-![alt text][image_4]
+![alt text][image_6]
+
+#####Non-Vehicle RGB Color Transform
+![alt text][image_7]
+
+#####Non-Vehicle HSV Color Transform
+![alt text][image_8]
+
+#####Non-Vehicle RGB HOG Transform
+![alt text][image_9]
+
+#####Non-Vehicle HSV HOG Transform
+![alt text][image_10]
