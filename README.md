@@ -77,14 +77,20 @@ Here are some samples
 #####Sample Test Images
 ![alt text][image_2]
 
-#####Color Spaces
+#####Color Spaces and HOG Features
 Different color spaces like RGB, HSV have been explored.  
 
 The hog package from scikit-Learn, skimage.hog(), has been used to extract the hog features
 
 Different values for the various HOG parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`) have been explored.
 
-Here is an example using the RGB and HSV color spaces and HOG parameters of orientations=8, pixels_per_cell=(8, 8) and cells_per_block=(2, 2):
+Here is an example using the RGB and HSV color spaces and HOG parameters as below
+
+Param | Value
+--- | ---
+orientation | 8
+pixels_per_cell | (8, 8)
+cells_per_block | (2, 2)
 
 #####Vehicle RGB Color Transform
 ![alt text][image_3]
