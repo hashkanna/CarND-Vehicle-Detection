@@ -1,4 +1,12 @@
-**Vehicle Detection Project**
+# Vehicle Detection
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
+Goal
+---
+The goal of this project is to write a software pipeline to detect vehicles in a video
+
+Vehicle Detection Project
+---
 
 [//]: # (Image References)
 
