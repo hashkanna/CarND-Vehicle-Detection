@@ -21,7 +21,7 @@ Vehicle Detection Project
 [image_8]: ./output_images/NonVehicle_HSV_ColorTransform.png "Non Vehicle - HSV Color Transform"
 [image_9]: ./output_images/NonVehicle_RGB_HOG.png "Non Vehicle - RGB HOG Transform"
 [image_10]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
-[image_11]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
+[image_11]: ./output_images/Slide_Window.png "Sliding Window"
 
 
 The goals/steps of this project are the following:
