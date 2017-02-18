@@ -21,7 +21,7 @@ Vehicle Detection Project
 [image_8]: ./output_images/NonVehicle_HSV_ColorTransform.png "Non Vehicle - HSV Color Transform"
 [image_9]: ./output_images/NonVehicle_RGB_HOG.png "Non Vehicle - RGB HOG Transform"
 [image_10]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
-
+[image_11]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
 
 
 The goals/steps of this project are the following:
@@ -144,3 +144,10 @@ A score of 97.86% correct classification has been observed.
 ```
 clf.score(X_test, y_test)
 ```
+
+####Criteria 4. Sliding Window Search: Describe how (and identify where in your code) you implemented a sliding window search. How did you decide what scales to search and how much to overlap windows?
+
+The code for the `slide_window` function can be found in [Vehicle_Detection.ipynb](./Vehicle_Detection.ipynb). Start/Stop parameters have been used to control the start and stop x and y positions of the window. window size and window overlap parameters have also been used.
+
+Here is an example output of the `slide_window` function
+![alt text][image_11]  
