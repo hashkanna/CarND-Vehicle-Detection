@@ -13,7 +13,6 @@ Vehicle Detection Project
 [image_0]: ./output_images/vehicles.png "Vehicle Images"
 [image_1]: ./output_images/non_vehicles.png "Non Vehicle Images"
 [image_2]: ./output_images/test_images.png "Test Images"
-[image_2]: ./md_resources/image_2.png "Bit Mask Extraction"
 [image_3]: ./md_resources/image_3.png "Histogram Point Fit"
 [image_4]: ./md_resources/image_4.png "Polynomial Fit"
 [image_5]: ./md_resources/image_5.png "Lane Augmented"
@@ -60,13 +59,19 @@ The images used are from GTI and KITTI datasets.
 Python's glob package is used to read in all the images.
 Two helper functions `load_images` and `plot_images` have been created to perform the loading and plotting of images. Refer [Vehicle_Detection.ipynb](./Vehicle_Detection.ipynb)
 
-All `vehicle` and `non-vehicle` images are loaded using these functions.  
-Here are some samples
+All `vehicle` and `non-vehicle` images are loaded using these functions.   
+Here are some samples  
+
 Sample Vehicle Images
 ![alt text][image_0]
 
-Sample Non Vehicle Images
+Sample Non-Vehicle Images
 ![alt text][image_1]
 
 Sample Test Images
 ![alt text][image_2]
+
+Color Spaces:  
+Different color spaces like RGB, HSV have been explored.  
+The hog package from scikit-Learn, skimage.hog(), has been used to extract the hog features
+Different values for the various HOG parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`) have been explored.
