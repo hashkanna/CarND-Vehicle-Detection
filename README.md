@@ -16,7 +16,7 @@ Vehicle Detection Project
 [image_3]: ./output_images/RGB_ColorTransform.png "Vehicle - RGB Color Transform"
 [image_4]: ./output_images/HSV_ColorTransform.png "NonVehicle - HSV Color Transform"
 [image_5]: ./output_images/RGB_HOG.png "Vehicle - RGB HOG Transform"
-[image_6]: ./output_images/RGB_HOG.png "Non Vehicle - HSV HOG Transform"
+[image_6]: ./output_images/HSV_HOG.png "Non Vehicle - HSV HOG Transform"
 
 
 
