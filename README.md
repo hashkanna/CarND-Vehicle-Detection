@@ -13,10 +13,12 @@ Vehicle Detection Project
 [image_0]: ./output_images/vehicles.png "Vehicle Images"
 [image_1]: ./output_images/non_vehicles.png "Non Vehicle Images"
 [image_2]: ./output_images/test_images.png "Test Images"
-[image_3]: ./md_resources/image_3.png "Histogram Point Fit"
-[image_4]: ./md_resources/image_4.png "Polynomial Fit"
-[image_5]: ./md_resources/image_5.png "Lane Augmented"
-[image_6]: ./md_resources/image_6.png "Close Up"
+[image_3]: ./output_images/RGB_ColorTransform.png "RGB Color Transform"
+[image_4]: ./output_images/HSV_ColorTransform.png "HSV Color Transform"
+[image_5]: ./output_images/RGB_ColorTransform.png "RGB Color Transform"
+[image_6]: ./output_images/RGB_ColorTransform.png "RGB Color Transform"
+
+
 
 The goals/steps of this project are the following:
 
@@ -77,3 +79,8 @@ Different color spaces like RGB, HSV have been explored.
 The hog package from scikit-Learn, skimage.hog(), has been used to extract the hog features
 
 Different values for the various HOG parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`) have been explored.
+
+Here is an example using the RGB and HSV color spaces and HOG parameters of orientations=8, pixels_per_cell=(8, 8) and cells_per_block=(2, 2):
+
+#####Vehicle RGB Color Transform
+![alt text][image_3]
