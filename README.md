@@ -10,9 +10,9 @@ Vehicle Detection Project
 
 [//]: # (Image References)
 
-[image_0]: ./output_resources/vehicle_images.png "Vehicle Images"
-[image_1]: ./output_resources/non_vehicle_images.png "Non Vehicle Images"
-[image_2]: ./output_resources/sample_test_images.png "Test Images"
+[image_0]: ./output_images/vehicle_images.png "Vehicle Images"
+[image_1]: ./output_images/non_vehicle_images.png "Non Vehicle Images"
+[image_2]: ./output_images/sample_test_images.png "Test Images"
 [image_2]: ./md_resources/image_2.png "Bit Mask Extraction"
 [image_3]: ./md_resources/image_3.png "Histogram Point Fit"
 [image_4]: ./md_resources/image_4.png "Polynomial Fit"
@@ -41,7 +41,7 @@ The code for this project can be found in the iPython notebook [Vehicle_Detectio
 The Project
 ---
 
-The goals / steps of this project are the following:
+The sequence steps to perform the goal of this project is below:
 
 * Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier
 * Optionally, apply a color transform and append binned color features, as well as histograms of color, to the HOG feature vector.
