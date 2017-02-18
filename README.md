@@ -10,9 +10,9 @@ Vehicle Detection Project
 
 [//]: # (Image References)
 
-[image_0]: ./output_images/vehicle_images.png "Vehicle Images"
-[image_1]: ./output_images/non_vehicle_images.png "Non Vehicle Images"
-[image_2]: ./output_images/sample_test_images.png "Test Images"
+[image_0]: ./output_images/vehicles.png "Vehicle Images"
+[image_1]: ./output_images/non_vehicles.png "Non Vehicle Images"
+[image_2]: ./output_images/test_images.png "Test Images"
 [image_2]: ./md_resources/image_2.png "Bit Mask Extraction"
 [image_3]: ./md_resources/image_3.png "Histogram Point Fit"
 [image_4]: ./md_resources/image_4.png "Polynomial Fit"
@@ -62,11 +62,11 @@ Two helper functions `load_images` and `plot_images` have been created to perfor
 
 All `vehicle` and `non-vehicle` images are loaded using these functions.  
 Here are some samples
-Vehicle Images
+Sample Vehicle Images
 ![alt text][image_0]
 
-Non Vehicle Images
+Sample Non Vehicle Images
 ![alt text][image_1]
 
-Test Images
+Sample Test Images
 ![alt text][image_2]
