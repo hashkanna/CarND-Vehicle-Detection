@@ -162,5 +162,5 @@ Here are some functions used to draw the bounding boxes, finding the cars, etc.
 * `find_cars_multiSize` - To use different sizes of windows
 
 
-
 Here are some images from the pipeline:
+![alt text][image_12]  
