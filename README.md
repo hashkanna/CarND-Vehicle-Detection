@@ -23,6 +23,8 @@ Vehicle Detection Project
 [image_10]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
 [image_11]: ./output_images/Slide_Window.png "Sliding Window"
 [image_12]: ./output_images/Draw_Boxes.png "Draw Boxes"
+[image_13]: ./output_images/Draw_Boxes1.png "Draw Boxes1"
+[image_14]: ./output_images/Draw_Boxes2.png "Draw Boxes2"
 
 
 
@@ -164,6 +166,8 @@ Here are some functions used to draw the bounding boxes, finding the cars, etc.
 
 Here are some images from the pipeline:
 ![alt text][image_12]  
+![alt text][image_13]  
+![alt text][image_14]  
 
 ---
 
