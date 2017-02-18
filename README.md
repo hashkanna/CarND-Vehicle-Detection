@@ -201,11 +201,9 @@ labels = label(heatmap)
 
 ####1. Briefly, discuss any problems/issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-I think this was very exciting, challenging, and interesting project. Some of the places for improvements in the model are:
-* Very slow processing. The pipeline should be optimized for speed, as the the 50s. video takes more than 3 hours to process.
-* Hyper and meta parameter optimization - the classifier, the threshold for boxes, the windows sizes, and all the other meta and hyperparameters in the pipeline.
-* A different classifier for the different sizes of patches instead of resizing the patch could improve the classification process.
-* More features. I used only HOG features from 8 different color transforms. Many other options could be investigated.
-* Kalman filter and working with previous frames and predicting future position would be another interesting advancement of the project.
-* Better visualization of the found objects may improve the feeling of the algorithm.
-* Finally, but not least I would like to investigate some deep learning algorithm pipelines.
+Here are some improvements that can be done to improve the project
+* Use Deep Learning ConvNets to generate features automatically
+* Parameter Selection - Use grid search or RandomizedGridSearch to scan the matrix of parameters to identify the optimal parameters instead of manually trying out arbitrary parameters
+* Try out other colour transforms and other features
+* Kalman filters and Using prior frames to predict future position could be a good addition
+* The processing of the images have been slow. Optimizations can be performed by identifying the right algorithms and reduce feature selection or improve computing power
