@@ -22,6 +22,8 @@ Vehicle Detection Project
 [image_9]: ./output_images/NonVehicle_RGB_HOG.png "Non Vehicle - RGB HOG Transform"
 [image_10]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
 [image_11]: ./output_images/Slide_Window.png "Sliding Window"
+[image_12]: ./output_images/Draw_Boxes.png "Draw Boxes"
+
 
 
 The goals/steps of this project are the following:
@@ -151,3 +153,14 @@ The code for the `slide_window` function can be found in [Vehicle_Detection.ipyn
 
 Here is an example output of the `slide_window` function
 ![alt text][image_11]  
+
+
+####Criteria 5. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
+Here are some functions used to draw the bounding boxes, finding the cars, etc.
+* `draw_boxes(img, bboxes, color=(0, 0, 255), thick=6)` - to draw boxes around the cars
+* `find_cars(img, window_list, window_size, clf, train_height=64, train_width=64)` - To extract HOG features and predict if there is a car in the window.
+* `find_cars_multiSize` - To use different sizes of windows
+
+
+
+Here are some images from the pipeline:
