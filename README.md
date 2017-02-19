@@ -125,6 +125,15 @@ cells_per_block | (2, 2)
 Various combinations of HOG parameters have been tried out manually and selected the ones which gave a good discrimination visually.
 Parameter Grid Search could be done to automate this process and identify the best parameters.
 
+The final choice of HOG parameters is shown below
+Param | Value
+--- | ---
+orientation | 9
+pixels_per_cell | (8, 8)
+cells_per_block | (2, 2)
+transform_sqrt | True
+feature_vector | True
+
 ####Criteria 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them)
 
 Support Vector Classifier(LinearSVC) has been used to classify the vehicles and non-vehicles based on the training png images from KITTI [vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and [non-vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) images
@@ -152,6 +161,13 @@ clf.score(X_test, y_test)
 ####Criteria 4. Sliding Window Search: Describe how (and identify where in your code) you implemented a sliding window search. How did you decide what scales to search and how much to overlap windows?
 
 The code for the `slide_window` function can be found in [Vehicle_Detection.ipynb](./Vehicle_Detection.ipynb). Start/Stop parameters have been used to control the start and stop x and y positions of the window. window size and window overlap parameters have also been used.
+
+Param | Value
+--- | ---
+window sizes | [(64,64), (96, 96), (128,128), (192, 192), (256, 256)]
+window overlaps | (0.8, 0.8)
+x, y position | (720*0.55), (720*0.8)
+
 
 Here is an example output of the `slide_window` function
 ![alt text][image_11]  
