@@ -14,13 +14,13 @@ Vehicle Detection Project
 [image_1]: ./output_images/non_vehicles.png "Non Vehicle Images"
 [image_2]: ./output_images/test_images.png "Test Images"
 [image_3]: ./output_images/RGB_ColorTransform.png "Vehicle - RGB Color Transform"
-[image_4]: ./output_images/HSV_ColorTransform.png "Vehicle - HSV Color Transform"
+[image_4]: ./output_images/HLS_ColorTransform.png "Vehicle - HLS Color Transform"
 [image_5]: ./output_images/RGB_HOG.png "Vehicle - RGB HOG Transform"
-[image_6]: ./output_images/HSV_HOG.png "Vehicle - HSV HOG Transform"
+[image_6]: ./output_images/HLS_HOG.png "Vehicle - HLS HOG Transform"
 [image_7]: ./output_images/NonVehicle_RGB_ColorTransform.png "Non Vehicle - RGB Color Transform"
-[image_8]: ./output_images/NonVehicle_HSV_ColorTransform.png "Non Vehicle - HSV Color Transform"
+[image_8]: ./output_images/NonVehicle_HLS_ColorTransform.png "Non Vehicle - HLS Color Transform"
 [image_9]: ./output_images/NonVehicle_RGB_HOG.png "Non Vehicle - RGB HOG Transform"
-[image_10]: ./output_images/NonVehicle_HSV_HOG.png "Non Vehicle - HSV HOG Transform"
+[image_10]: ./output_images/NonVehicle_HLS_HOG.png "Non Vehicle - HLS HOG Transform"
 [image_11]: ./output_images/Slide_Window.png "Sliding Window"
 [image_12]: ./output_images/Draw_Boxes.png "Draw Boxes"
 [image_13]: ./output_images/Draw_Boxes1.png "Draw Boxes1"
@@ -99,25 +99,25 @@ cells_per_block | 2
 #####Vehicle RGB Color Transform
 ![alt text][image_3]
 
-#####Vehicle HSV Color Transform
+#####Vehicle HLS Color Transform
 ![alt text][image_4]
 
 #####Vehicle RGB HOG Transform
 ![alt text][image_5]
 
-#####Vehicle HSV HOG Transform
+#####Vehicle HLS HOG Transform
 ![alt text][image_6]
 
 #####Non-Vehicle RGB Color Transform
 ![alt text][image_7]
 
-#####Non-Vehicle HSV Color Transform
+#####Non-Vehicle HLS Color Transform
 ![alt text][image_8]
 
 #####Non-Vehicle RGB HOG Transform
 ![alt text][image_9]
 
-#####Non-Vehicle HSV HOG Transform
+#####Non-Vehicle HLS HOG Transform
 ![alt text][image_10]  
 
 ####Criteria 2. Explain how you settled on your final choice of HOG parameters
