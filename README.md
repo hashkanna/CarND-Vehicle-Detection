@@ -221,6 +221,6 @@ A decision function has been used with Support Vector Classifier to let only win
 Here are some improvements that can be done to improve the project
 * Use Deep Learning ConvNets to generate features automatically
 * Parameter Selection - Use grid search or RandomizedGridSearch to scan the matrix of parameters to identify the optimal parameters instead of manually trying out arbitrary parameters
-* Try out other colour transforms and other features
-* Kalman filters and Using prior frames to predict future position could be a good addition
+* False positives can be removed may be by adjusting the heat map or adding new features like Color Histograms
+* Kalman filters could be a good addition
 * The processing of the images have been slow. Optimizations can be performed by identifying the right algorithms and reduce feature selection or improve computing power
