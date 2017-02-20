@@ -82,7 +82,7 @@ Here are some samples
 ![alt text][image_2]
 
 #####Color Spaces and HOG Features
-Different color spaces like RGB, HSV have been explored.  Finally, HLS transform has been found to perform better
+Different color spaces like RGB, HSV, YUV have been explored.  Finally, HLS transform has been found to perform better.
 
 The hog package from scikit-Learn, skimage.hog(), has been used to extract the hog features
 
