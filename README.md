@@ -82,7 +82,7 @@ Here are some samples
 ![alt text][image_2]
 
 #####Color Spaces and HOG Features
-Different color spaces like RGB, HSV have been explored.  
+Different color spaces like RGB, HSV have been explored.  Finally, HLS transform has been found to perform better
 
 The hog package from scikit-Learn, skimage.hog(), has been used to extract the hog features
 
@@ -92,9 +92,9 @@ Here is an example using the RGB and HSV color spaces and HOG parameters as belo
 
 Param | Value
 --- | ---
-orientation | 8
-pixels_per_cell | (8, 8)
-cells_per_block | (2, 2)
+orientation | 9
+pixels_per_cell | 12
+cells_per_block | 2
 
 #####Vehicle RGB Color Transform
 ![alt text][image_3]
@@ -122,17 +122,16 @@ cells_per_block | (2, 2)
 
 ####Criteria 2. Explain how you settled on your final choice of HOG parameters
 
-Various combinations of HOG parameters have been tried out manually and selected the ones which gave a good discrimination visually.
+Various combinations of HOG parameters have been tried out manually and selected the ones which gave a good discrimination visually. Tried out 8, 12 and 16 pixels per cell and found 12 to perform better. There is a lot of turning of knobs of the various parameters with different values to get a better performance
+
 Parameter Grid Search could be done to automate this process and identify the best parameters.
 
 The final choice of HOG parameters is shown below
 Param | Value
 --- | ---
 orientation | 9
-pixels_per_cell | (8, 8)
-cells_per_block | (2, 2)
-transform_sqrt | True
-feature_vector | True
+pixels_per_cell | 12
+cells_per_block | 2
 
 ####Criteria 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them)
 
@@ -164,7 +163,7 @@ The code for the `slide_window` function can be found in [Vehicle_Detection.ipyn
 
 Param | Value
 --- | ---
-window sizes | [(64,64), (96, 96), (128,128), (192, 192), (256, 256)]
+window sizes | [(64,64), (128,128)]
 window overlaps | (0.8, 0.8)
 x, y position | (720*0.55), (720*0.8)
 
@@ -210,6 +209,8 @@ heatmap_cont = heatmap * 3/4
 heatmap = apply_threshold(heatmap, threshold)
 labels = label(heatmap)
 ```
+
+A decision function has been used with Support Vector Classifier to let only windows that satisfy a certain threshold.
 
 ---
 
